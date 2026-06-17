@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="productos.css">
+  <link rel="icon" type="image/x-icon" href="img/icono-removebg-preview.png">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/maquillajelogo-removebg-preview.png" alt="Mi logo" width="40">
+        <div class="ms-3 d-flex flex-column">
+          <p id="texto" class="mb-0" onclick="window.location.href='index.html'">Makeup Vgb</p>
+        </div>
+
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuBootstrap">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuBootstrap">
+        <ul class="navbar-nav mb-3 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactos.html">Contacto</a>
+          </li>
+          <div class="ms-3 d-flex flex-column">
+            <p id="texto" class="mb-0" onclick="cambioTexto(this)">Bienvenidos a Makeup Vgb</p>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <script type="text/Javascript">
+    function cambioTexto(texto) {
+        texto.innerHTML = "Todos los productos que buscas en un solo lugar";
+        texto.style.backgroundColor = "#dda2c7";
+    }
+ </script>
+
+  <div class="page-layout">
+    <aside class="sidebar">
+
+      <section class="sidebar-accordion">
+        <div class="accordion" id="accordionExample">
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="accordion" id="accordionExample2">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        Ojos
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse show">
+                      <div class="accordion-body">
+                        <div class="accordion-item">
+                          <strong>Productos para tus ojos que te pueden servir</strong>
+                        </div>
+                      </div>
+                    </div>
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        Caras
+                      </button>
+                    </h2>
+                    <div>
+                      <div id="collapseThree" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                          <div class="accordion-item">
+                            <strong>Productos para tu cara para resaltar tu belleza</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                        Labios
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse show">
+                      <div class="accordion-body">
+                        <div class="accordion-item">
+                          <strong>Labiales de todo estilo que te gusten</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </aside>
+    <div class="page-content">
+  <section id="Labios" class="content" >
+
+    <header>
+      <h1>Labios</h1>
+      <p>Descubre nuestra selección de labiales para resaltar tu sonrisa.</p>
+    </header>
+    <main class="content">
+      <div class="card-container">
+        <div class="col">
+          <div class="product-card">
+            <img src="img/cuadrado-29-dcbf81eadb8e172a7017549284308308-1024-1024-removebg-preview.png" class="card-img-top" alt="Balsamo para labios">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Balsamo para Labios</h5>
+              <p class="card-text">Hidrata y suaviza los labios para un aspecto saludable y atractivo.</p>
+              <a href="#" class="btn btn-primary mt-auto">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-card">
+            <img src="img/labial-vogue-colorissimo-cremoso-rosa-amorosa-x-4-gr-removebg-preview.png" class="card-img-top" alt="Labial rosa">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Labial Rosa</h5>
+              <p class="card-text">Color suave y femenino para un look fresco y natural.</p>
+              <a href="#" class="btn btn-primary mt-auto">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-card">
+            <img src="img/gloos.webp" class="card-img-top" alt="Gloss brillante">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Gloss Brillante</h5>
+              <p class="card-text">Brillo intenso con efecto húmedo y sensación ligera.</p>
+              <a href="#" class="btn btn-primary mt-auto">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-card">
+            <img src="img/8f1b1b8b-9dcb-4af4-bbc9-6d465c9969e2.tmp" class="card-img-top" alt="Lápiz labial">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Lápiz Labial</h5>
+              <p class="card-text">Lápiz labial de alta cobertura para un look duradero y natural.</p>
+              <a href="#" class="btn btn-primary mt-auto">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+<section id="Ojos" class="content">
+    <header>
+      <h1>Ojos</h1>
+      <p>Descubre nuestra selección de productos para resaltar tus ojos.</p>
+    </header>
+    <main class="content">
+      <div class="card-container">
+        <div class="col">
+          <div class="product-card">
+            <img src="img/billooo.webp" class="card-img-top" alt="Brillitos">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Brillitos</h5>
+              <p class="card-text">Brillitos para añadir brillo y definición a los ojos.</p>
+              <a href="#" class="btn btn-primary mt-auto">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-card">
+            <img src="img/mascara2.jpg" class="card-img-top" alt="Máscara de pestañas">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Máscara de Pestañas</h5>
+              <p class="card-text">Máscara de pestañas voluminizadora para un efecto dramático y duradero.</p>
+              <a href="#" class="btn btn-primary mt-auto">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-card">
+            <img src="img/delineador.png" class="card-img-top" alt="Delineador">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Delineador</h5>
+              <p class="card-text">Delineador de ojos para definir y realzar el contorno de las pestañas.</p>
+              <a href="#" class="btn btn-primary mt-auto">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-card">
+            <img src="img/sombra.jpg" class="card-img-top" alt="Sombra de ojos">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Sombra de Ojos</h5>
+              <p class="card-text">Paleta de sombras con tonos vibrantes y duraderos para un look impactante.</p>
+              <a href="#" class="btn btn-primary mt-auto">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+<section id="Cara" class="content">
+    <header>
+      <h1>Cara</h1>
+      <p>Descubre nuestra selección de productos para resaltar tu rostro.</p>
+    </header>
+    <main class="content">
+      <div class="card-container">
+        <div class="col">
+          <div class="product-card">
+            <img src="img/base.avif" class="card-img-top" alt="Base de maquillaje">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Base de Maquillaje</h5>
+              <p class="card-text">Base de maquillaje de alta cobertura para un acabado impecable y duradero.</p>
+              <a href="#" class="btn btn-primary mt-auto">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-card">
+            <img src="img/selladdoorr3.webp" class="card-img-top" alt="Sellador de maquillaje">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Sellador de Maquillaje</h5>
+              <p class="card-text">Sellador de maquillaje para mantener tu maquillaje en su lugar durante más tiempo.</p>
+              <a href="#" class="btn btn-primary mt-auto">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-card">
+            <img src="img/rubor.avif" class="card-img-top" alt="Rubor">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Rubor</h5>
+              <p class="card-text">Rubor para añadir color y volumen a las mejillas.</p>
+              <a href="#" class="btn btn-primary mt-auto">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-card">
+            <img src="img/bronceador.avif" class="card-img-top" alt="Bronceador">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Bronceador</h5>
+              <p class="card-text">Bronceador para darle un toque de bronce a tu piel y resaltar tus rasgos.</p>
+              <a href="#" class="btn btn-primary mt-auto">COMPRAR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+    </div>
+  </div>
+
+<footer class="footer">
+   <div class="container">
+    <div class="row">
+      <div class="col-12 text-right">
+  <div class="container text-center">
+  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+    <div class="col">
+      <div class="p-3"> <p><img src="img/whatsapp_logo.original_lBw0u7c-removebg-preview.png" width="45" alt="Makeup Vgb"> <a href="https://web.whatsapp.com/" target="_blank">3546-534907</a></p>
+      <p><img src="img/ig-removebg-preview.png" width="45" alt="Makeup Vgb"><a class="instagram" href="https://www.instagram.com/?hl=es" target="_blank">Instagram</a></p></div>
+    </div>
+    <div class="col">
+      <div class="p-3"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1112.2739340228666!2d-64.57139076420773!3d-31.982968930671447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2b1e3da657ce3%3A0x30e5f90ae19fbd32!2sEscuela%20Experimental%20ProA%20-%20Sede%20VGB!5e1!3m2!1ses!2sar!4v1780592514091!5m2!1ses!2sar" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" display="inline-block"></iframe></div>
+    </div>
+  </div>
+        <p>Candelaria Gigena-2026-Escuela experimental ProA - Sede VGB</p>
+</div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
